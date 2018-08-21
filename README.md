@@ -6,7 +6,7 @@ I hope it can serve as a boilerplate for dealing with Auth and more. I love Choo
 
 ## Branches
 
-### 00-hello-world-setup
+### 00-generate-choo-and-feathers
 ### 01-feathers-auth-with-message-service-and-hooks
 ### 02-choo-meets-feathers-as-api
 ### 03-authenticated-message-posting
