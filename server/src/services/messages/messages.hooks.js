@@ -4,15 +4,16 @@ const processMessage = require('../../hooks/process-message');
 
 const populateUser = require('../../hooks/populate-user');
 
+// allow people to get and find w/out auth
 module.exports = {
   before: {
     all: [],
     find: [],
     get: [],
-    create: [processMessage()],
-    update: [],
-    patch: [],
-    remove: []
+    create: [authenticate('jwt'),processMessage()],
+    update: [authenticate('jwt')],
+    patch: [authenticate('jwt')],
+    remove: [authenticate('jwt')]
   },
 
   after: {
