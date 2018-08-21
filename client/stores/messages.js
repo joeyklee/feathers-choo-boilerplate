@@ -68,6 +68,8 @@ function store (state, emitter) {
     });
 
     // protected routes :)
+    // TODO: you're not auth'd on pageload
+    // there might be something funky with the emitters not being registered
     api.authenticate().then( () => {
       emitter.on('messages:create', function (formData) {
 
