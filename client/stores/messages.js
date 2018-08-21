@@ -87,6 +87,8 @@ function store (state, emitter) {
         emitter.emit(state.events.RENDER)
       });
 
+    }).catch( err => {
+      return err
     })
 
 

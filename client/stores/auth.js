@@ -78,7 +78,6 @@ function store (state, emitter) {
 
     emitter.on("auth:logout", function(formData){
       emitter.emit("pushState", "auth")
-
     });
 
 
