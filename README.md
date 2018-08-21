@@ -11,7 +11,6 @@ I hope it can serve as a boilerplate for dealing with Auth and more. I love Choo
 ### 00-generate-choo-and-feathers
 
 
-
 In terminal window 1:
 ```
 create-choo-app client
