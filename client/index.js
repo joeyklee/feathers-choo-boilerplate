@@ -14,12 +14,10 @@ if (process.env.NODE_ENV !== 'production') {
 
 app.use(require('./stores/clicks'))
 app.use(require('./stores/messages'))
-app.use(require('./stores/auth'))
 
 app.route('/', require('./views/main'))
 app.route('/clicks', require('./views/clicks'))
 app.route('/messages', require('./views/messages'))
-app.route('/auth', require('./views/auth'))
 app.route('/*', require('./views/404'))
 
 module.exports = app.mount('body')

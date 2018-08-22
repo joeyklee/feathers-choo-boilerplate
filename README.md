@@ -9,13 +9,9 @@ I hope it can serve as a boilerplate for dealing with Auth and more. I love Choo
 ### 00-generate-choo-and-feathers
 ### 01-feathers-auth-with-message-service-and-hooks
 ### 02-choo-meets-feathers-as-api
-### 03-authenticated-message-posting
-* note, not a realtime websocket based messaging thing... yet? tbd
 
-
-## Update Aug 21 2018
-I haven't figured out whether or not I'm using the sockets correctly, but I just wanted to push this out there in case someone else finds it helpful. This is a sandbox I'm having fun playing in.
-
+* go to localhost:8080/messages
+* you can now post messages
 
 ## Setup
 
