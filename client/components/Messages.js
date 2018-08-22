@@ -29,7 +29,6 @@ class Messages extends component {
     let form = e.currentTarget;
     let formData = new FormData(form);
     this.emit("messages:create", formData)
-    this.emit("messages:getMessages")
     // Call the `messages` service
     console.log("button clicked!")
   }
@@ -38,7 +37,6 @@ class Messages extends component {
     console.log(e.target.dataset.id)
     let messageId = e.target.dataset.id
     this.emit("messages:remove", messageId)
-    this.emit("messages:getMessages")
   }
 
 
